@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Who directed the movie 'The Lord of the Rings'?</p>
+                <label><input type="radio" name="q1" value="a"> Peter Jackson</label><br>
+                <label><input type="radio" name="q1" value="b"> Steven Spielberg</label><br>
+                <label><input type="radio" name="q1" value="c"> James Cameron</label><br>
+            </div>
+            <div class="question">
+                <p>2. Which country does 'The Hobbit' take place in?</p>
+                <label><input type="radio" name="q2" value="a"> Ireland</label><br>
+                <label><input type="radio" name="q2" value="b"> New Zealand</label><br>
+                <label><input type="radio" name="q2" value="c"> Australia</label><br>
+            </div>
+            <div class="question">
+                <p>3. What is the capital city of New Zealand?</p>
+                <label><input type="radio" name="q3" value="a"> Auckland</label><br>
+                <label><input type="radio" name="q3" value="b"> Christchurch</label><br>
+                <label><input type="radio" name="q3" value="c"> Wellington</label><br>
+            </div>
+            <button type="button" onclick="showResults()">Submit Quiz</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
